@@ -45,20 +45,19 @@
     <div class="tbl-wrap reveal" style="margin-bottom:2rem">
       <div class="tbl-cap"><span class="tag">Projet n°1 · S3</span><b>Mnémosyne — Suivi de cohortes (groupe)</b></div>
       <div class="proj-scroll"><table class="proj">
-        <thead><tr><th style="width:18%">Objectifs</th><th style="width:24%">Tâches réalisées</th><th style="width:18%">Compétences</th><th style="width:24%">Preuves</th><th style="width:16%">Pistes d'amélioration</th></tr></thead>
+        <thead><tr><th style="width:18%">Objectifs</th><th style="width:24%">Tâches individuelles</th><th style="width:18%">Compétences</th><th style="width:24%">Preuves</th><th style="width:16%">Pistes d'amélioration</th></tr></thead>
         <tbody><tr>
           <td><b>Principal&nbsp;:</b> construire une application web de suivi du devenir des cohortes (diagramme de Sankey à partir de l'API ScoDoc).<br><br><b>Secondaire&nbsp;:</b> rendre les parcours lisibles, dans le respect du RGPD (données anonymisées).</td>
           <td><ul>
-            <li>Architecture <b>MVC en Flask</b> (controllers / model / service).</li>
-            <li>Base <b>SQLite</b> et requêtes SQL ; récupération des données via l'API ScoDoc.</li>
-            <li>Première version du <b>diagramme de Sankey</b> (un seul niveau).</li>
-            <li><b>Ma contribution&nbsp;:</b> conception de la base et requêtes SQL, et participation au développement du Sankey.</li>
+            <li><b>Principales&nbsp;:</b> j'ai conçu et mis en place l'<b>architecture MVC en Flask</b> (controllers / model / service) — le socle back-end de l'application.</li>
+            <li><b>Secondaires&nbsp;:</b> développement des routes et de la logique serveur.</li>
+            <li class="red"><b>En équipe&nbsp;:</b> base SQLite, récupération via l'API ScoDoc, première version du diagramme de Sankey.</li>
           </ul></td>
           <td><ul>
-            <li><b>Techniques&nbsp;:</b> Python/Flask, SQLite/SQL, API REST (ScoDoc), MVC.</li>
+            <li><b>Techniques&nbsp;:</b> Python/Flask, architecture MVC, back-end.</li>
             <li class="red"><b>Transversales&nbsp;:</b> conduire un projet, collaborer (Git).</li>
           </ul></td>
-          <td><b>Démontré&nbsp;:</b> application web fonctionnelle (Flask + SQLite).<br><b>Exemple&nbsp;:</b> diagramme de Sankey affichant le parcours d'une cohorte, données anonymisées.<br><b>Justifié&nbsp;:</b> architecture assez claire pour être reprise et améliorée au S4.</td>
+          <td><b>Démontré&nbsp;:</b> architecture Flask fonctionnelle, que j'ai conçue.<br><b>Exemple&nbsp;:</b> la structure controllers / model / service a été reprise telle quelle au S4.<br><b>Justifié&nbsp;:</b> c'est précisément cette base, que je maîtrisais, qui a été choisie au S4 pour sa facilité de reprise.</td>
           <td>Refondre la base (référentiel + compétences au lieu d'un champ TEXT)&nbsp;; Sankey multi-niveaux et lisible&nbsp;; ajouter README + charte&nbsp;; alléger le front-end.</td>
         </tr></tbody>
       </table></div>
@@ -67,22 +66,20 @@
     <div class="tbl-wrap reveal" style="margin-bottom:1rem">
       <div class="tbl-cap red"><span class="tag">Projet n°2 · S4</span><b>Mnémosyne — amélioration (équipe SATURNE 2)</b></div>
       <div class="proj-scroll"><table class="proj">
-        <thead><tr><th style="width:18%">Objectifs</th><th style="width:26%">Tâches réalisées</th><th style="width:17%">Compétences</th><th style="width:23%">Preuves</th><th style="width:16%">Pistes (BUT3)</th></tr></thead>
+        <thead><tr><th style="width:18%">Objectifs</th><th style="width:26%">Tâches individuelles</th><th style="width:17%">Compétences</th><th style="width:23%">Preuves</th><th style="width:16%">Pistes (BUT3)</th></tr></thead>
         <tbody><tr>
           <td><b>Principal&nbsp;:</b> reprendre une application Mnémosyne du S3 pour <b>refondre sa base de données</b> et <b>enrichir le diagramme de Sankey</b> (parcours plus lisibles).<br><br><b>Secondaire&nbsp;:</b> moderniser l'interface (charte, page d'accueil allégée).</td>
           <td><ul>
-            <li><b>Analyse de l'existant&nbsp;:</b> comparaison des 4 projets S3 sur 4 critères (langage, BDD, visuel, reprise), notés sur 20.</li>
-            <li><b>Choix argumenté</b> de la base&nbsp;: reprise de notre projet Flask, en intégrant la modélisation d'un autre groupe et l'idée d'une table SCENARIO.</li>
-            <li>Refonte du <b>modèle (MEA)</b> et du script de création&nbsp;: ajout d'un référentiel et des compétences.</li>
-            <li><b>Sankey multi-niveaux</b> (BUT1 → décisions → BUT2 → … → BUT3 → Diplômé / Redoublement / Abandon) + refonte du front-end.</li>
-            <li><b>Ma contribution&nbsp;:</b> participation à la notation des projets, à la refonte de la base/des requêtes SQL et au diagramme de Sankey.</li>
+            <li><b>Principales&nbsp;:</b> j'ai mené la <b>refonte de la base de données</b> — nouveau modèle entité-association (MEA), script de création et requêtes SQL, ajout d'un <b>référentiel et des compétences</b> (à la place d'un champ TEXT) et d'une <b>table SCENARIO</b> pour les cas de passage.</li>
+            <li><b>Secondaires&nbsp;:</b> j'ai réalisé l'<b>analyse et la notation des 4 projets S3</b> (grille langage / BDD / visuel / reprise) qui a guidé le choix de la base.</li>
+            <li class="red"><b>En équipe&nbsp;:</b> diagramme de Sankey multi-niveaux et refonte du front-end / charte.</li>
           </ul></td>
           <td><ul>
-            <li><b>Techniques&nbsp;:</b> Python/Flask, Jinja, SQLite/SQL, modélisation (MEA), Git.</li>
-            <li class="red"><b>Transversales&nbsp;:</b> conduire un projet, optimiser une application, travailler en équipe.</li>
+            <li><b>Techniques&nbsp;:</b> modélisation (MEA), SQLite/SQL, Python/Flask.</li>
+            <li class="red"><b>Transversales&nbsp;:</b> optimiser une application, analyser/diagnostiquer, conduire un projet, travailler en équipe.</li>
           </ul></td>
-          <td><b>Démontré&nbsp;:</b> application améliorée à partir d'une base existante (reprise de code).<br><b>Exemple&nbsp;:</b> nouveau Sankey multi-niveaux + base restructurée (référentiel, compétences, table SCENARIO).<br><b>Justifié&nbsp;:</b> choix de la base appuyé sur une grille de notation /20 (le plus simple à reprendre, pas le mieux noté).</td>
-          <td>Finaliser la charte + README&nbsp;; ajouter des tests automatisés&nbsp;; déployer l'application.</td>
+          <td><b>Démontré&nbsp;:</b> base de données restructurée que j'ai conçue (référentiel, compétences, table SCENARIO).<br><b>Exemple&nbsp;:</b> passage d'un simple champ TEXT à un véritable modèle relationnel.<br><b>Justifié&nbsp;:</b> le choix de la base de départ s'appuie sur ma grille de notation /20 (le plus simple à reprendre, pas le mieux noté).</td>
+          <td>Ajouter des tests automatisés sur la couche données&nbsp;; finaliser le README&nbsp;; déployer l'application.</td>
         </tr></tbody>
       </table></div>
     </div>

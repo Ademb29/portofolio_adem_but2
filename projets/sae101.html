@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAÉ 1.01 · BUT1 · Semestre 1 — Adem Ben Maamar</title>
+<meta name="description" content="Portfolio d'Adem Ben Maamar, étudiant en BUT Informatique à l'IUT de Villetaneuse — Université Sorbonne Paris Nord.">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-bar">
+    <a class="brand" href="../index.html" aria-label="Accueil">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>BUT Informatique</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navlinks"><a href="../index.html">Accueil</a><a href="../presentation.html">Parcours</a><a href="../competences.html">Compétences</a><a href="../projets.html" class="active">Projets</a><a href="../stage.html">Stage</a><a href="../bilan.html">Bilan</a><a href="../veille.html">Veille</a><a href="../contact.html" class="nav-cta">Me contacter</a></div>
+  </div>
+</nav>
+<header class="phead">
+  <div class="phead-in">
+    <span class="pbadge"> SAÉ 1.01 · BUT1 · Semestre 1</span>
+    <h1>Jeu d'échecs<br>en Java</h1>
+    <p>Développement complet d'un jeu d'échecs jouable en terminal, avec gestion de toutes les règles.</p>
+  </div>
+</header>
+
+<div class="body-wrap prose">
+  <a href="../projets.html" class="back">&larr; Retour aux projets</a>
+
+  <div class="meta-grid"><div class="meta"><div class="k">Semestre</div><div class="v">S1 — BUT1</div></div><div class="meta"><div class="k">Équipe</div><div class="v">Individuel</div></div><div class="meta"><div class="k">Technologies</div><div class="v">Java · POO</div></div><div class="meta"><div class="k">Compétences</div><div class="v">Réaliser · Optimiser</div></div></div>
+
+  <h2>Le projet en bref</h2>
+  <p>J'ai développé un jeu d'échecs en Java, entièrement jouable dans le terminal. Le projet m'a demandé de gérer la logique des déplacements, l'alternance des tours et les règles particulières comme les prises, la mise en échec et le roque.</p><p>Il m'a permis de consolider mes bases en programmation orientée objet, de réfléchir à une structure claire pour les pièces et le plateau, et d'affermir ma rigueur algorithmique.</p>
+
+  <h2>Déroulement</h2>
+  <div class="steps"><div class="step reveal"><div class="n">1</div><div class="step-b"><h4>Conception de la structure</h4><p>Modélisation des classes : Pièce (abstraite), Roi, Dame, Tour, Fou, Cavalier, Pion. Définition du plateau 8×8.</p></div></div><div class="step reveal"><div class="n">2</div><div class="step-b"><h4>Logique des déplacements</h4><p>Implémentation des règles de mouvement propres à chaque type de pièce et vérification de la validité des coups.</p></div></div><div class="step reveal"><div class="n">3</div><div class="step-b"><h4>Règles avancées</h4><p>Gestion des prises, de l'échec, de l'échec et mat et du roque. Tests de toutes les situations de jeu.</p></div></div><div class="step reveal"><div class="n">4</div><div class="step-b"><h4>Rendu final</h4><p>Jeu jouable en terminal : affichage du plateau, saisie des coups, détection de fin de partie.</p></div></div></div>
+
+  <h2>Ce que j'en retiens</h2>
+  <div class="callout soft">
+    <p>Ce projet m'a appris que la POO n'est pas qu'un concept théorique : c'est une façon de penser la structure du code. Modéliser un jeu d'échecs m'a forcé à anticiper chaque interaction entre les pièces. Premier grand projet Java, et une vraie satisfaction de le voir tourner.</p>
+  </div>
+
+  <h2>Compétences mobilisées</h2>
+  <div class="grid g-2" style="margin:1rem 0 .4rem">
+    <div class="comp-line reveal"><span class="ck">Réaliser</span><p>Concevoir et coder une application complète à partir d'une spécification de règles précise.</p></div><div class="comp-line reveal"><span class="ck">Optimiser</span><p>Choisir des structures de données adaptées (héritage, polymorphisme) pour un code lisible et extensible.</p></div>
+  </div>
+
+  <h2>Concepts &amp; technologies</h2>
+  <div class="pills"><span class="pill">Héritage</span><span class="pill">Polymorphisme</span><span class="pill">Encapsulation</span><span class="pill">Design patterns</span><span class="pill">Algorithmique</span></div>
+
+  <div class="prevnext"><span></span><a href="sae102.html" class="pn-link right"><span><small>Suivant</small>BDD réseau social</span> &rarr;</a></div>
+</div>
+
+<footer class="foot">
+  <div class="ftop"><i></i></div>
+  <div class="foot-in">
+    <a class="brand" href="../index.html">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>Portfolio · BUT Informatique</small></span>
+    </a>
+    <nav class="foot-links" aria-label="Pied de page"><a href="../index.html">Accueil</a><a href="../presentation.html">Parcours</a><a href="../competences.html">Compétences</a><a href="../projets.html">Projets</a><a href="../stage.html">Stage</a><a href="../bilan.html">Bilan</a><a href="../veille.html">Veille</a><a href="../contact.html">Contact</a></nav>
+    <div class="foot-copy">
+      <span>© 2026 Adem Ben Maamar — IUT Villetaneuse · Université Sorbonne Paris Nord</span>
+      <span>En recherche d'alternance / stage BUT3</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'),n=document.getElementById('navlinks');
+  if(b)b.addEventListener('click',function(){var o=n.classList.toggle('open');b.classList.toggle('open',o);b.setAttribute('aria-expanded',o);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  // jauges techniques
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=e.target.querySelector('i');if(i)i.style.width=e.target.dataset.v+'%';bo.unobserve(e.target);}})},{threshold:.4});
+  document.querySelectorAll('.bar').forEach(function(el){bo.observe(el);});
+})();
+</script>
+</body>
+</html>

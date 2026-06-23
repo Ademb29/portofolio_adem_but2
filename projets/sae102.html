@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAÉ 1.02 · BUT1 · Semestre 1 — Adem Ben Maamar</title>
+<meta name="description" content="Portfolio d'Adem Ben Maamar, étudiant en BUT Informatique à l'IUT de Villetaneuse — Université Sorbonne Paris Nord.">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-bar">
+    <a class="brand" href="../index.html" aria-label="Accueil">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>BUT Informatique</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navlinks"><a href="../index.html">Accueil</a><a href="../presentation.html">Parcours</a><a href="../competences.html">Compétences</a><a href="../projets.html" class="active">Projets</a><a href="../stage.html">Stage</a><a href="../bilan.html">Bilan</a><a href="../veille.html">Veille</a><a href="../contact.html" class="nav-cta">Me contacter</a></div>
+  </div>
+</nav>
+<header class="phead red">
+  <div class="phead-in">
+    <span class="pbadge"> SAÉ 1.02 · BUT1 · Semestre 1</span>
+    <h1>Base de données<br>réseau social</h1>
+    <p>Modélisation et implémentation SQL complète : utilisateurs, publications, commentaires, amitiés.</p>
+  </div>
+</header>
+
+<div class="body-wrap prose">
+  <a href="../projets.html" class="back">&larr; Retour aux projets</a>
+
+  <div class="meta-grid"><div class="meta"><div class="k">Semestre</div><div class="v">S1 — BUT1</div></div><div class="meta"><div class="k">Équipe</div><div class="v">Individuel</div></div><div class="meta"><div class="k">Technologies</div><div class="v">SQL · MCD · MLD</div></div><div class="meta"><div class="k">Compétences</div><div class="v">Gérer · Concevoir</div></div></div>
+
+  <h2>Le projet en bref</h2>
+  <p>À partir d'un scénario de réseau social, j'ai conçu une base de données complète : utilisateurs, publications, commentaires, amis, likes. J'ai d'abord construit un modèle conceptuel (MCD) avant de le traduire en SQL pour créer les tables, insérer des données et écrire des requêtes.</p><p>Le projet m'a permis de comprendre en profondeur la modélisation de données et les liens entre entités dans un système complexe.</p>
+
+  <h2>Déroulement</h2>
+  <div class="steps"><div class="step reveal"><div class="n">1</div><div class="step-b"><h4>Analyse du scénario</h4><p>Identification des entités — Utilisateur, Publication, Commentaire, Amitié, Like — et définition des cardinalités.</p></div></div><div class="step reveal"><div class="n">2</div><div class="step-b"><h4>Conception MCD → MLD</h4><p>Passage du modèle conceptuel au modèle logique, avec normalisation des tables pour éviter les redondances.</p></div></div><div class="step reveal"><div class="n">3</div><div class="step-b"><h4>Implémentation SQL</h4><p>Création des tables, clés primaires et étrangères, contraintes d'intégrité, insertion de données de test.</p></div></div><div class="step reveal"><div class="n">4</div><div class="step-b"><h4>Requêtes d'analyse</h4><p>SELECT complexes avec jointures, GROUP BY et HAVING pour analyser les interactions du réseau.</p></div></div></div>
+
+  <h2>Ce que j'en retiens</h2>
+  <div class="callout soft red">
+    <p>La SAÉ qui m'a le plus sensibilisé à l'importance de bien penser une architecture de données avant d'écrire la moindre ligne de code. Un MCD mal conçu engendre des problèmes en cascade. J'ai compris pourquoi les bases relationnelles restent au cœur de presque tout système.</p>
+  </div>
+
+  <h2>Compétences mobilisées</h2>
+  <div class="grid g-2" style="margin:1rem 0 .4rem">
+    <div class="comp-line reveal"><span class="ck">Concevoir</span><p>Traduire un besoin métier en modèle conceptuel puis logique, normalisé et cohérent.</p></div><div class="comp-line reveal"><span class="ck">Gérer</span><p>Garantir l'intégrité des données par les clés et contraintes, et les interroger efficacement en SQL.</p></div>
+  </div>
+
+  <h2>Concepts &amp; technologies</h2>
+  <div class="pills"><span class="pill">Modélisation</span><span class="pill">Normalisation</span><span class="pill">Jointures SQL</span><span class="pill">Clés étrangères</span><span class="pill">Intégrité référentielle</span></div>
+
+  <div class="prevnext"><a href="sae101.html" class="pn-link">&larr; <span><small>Précédent</small>Jeu d'échecs Java</span></a><a href="sae103.html" class="pn-link right"><span><small>Suivant</small>Voyage en groupe</span> &rarr;</a></div>
+</div>
+
+<footer class="foot">
+  <div class="ftop"><i></i></div>
+  <div class="foot-in">
+    <a class="brand" href="../index.html">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>Portfolio · BUT Informatique</small></span>
+    </a>
+    <nav class="foot-links" aria-label="Pied de page"><a href="../index.html">Accueil</a><a href="../presentation.html">Parcours</a><a href="../competences.html">Compétences</a><a href="../projets.html">Projets</a><a href="../stage.html">Stage</a><a href="../bilan.html">Bilan</a><a href="../veille.html">Veille</a><a href="../contact.html">Contact</a></nav>
+    <div class="foot-copy">
+      <span>© 2026 Adem Ben Maamar — IUT Villetaneuse · Université Sorbonne Paris Nord</span>
+      <span>En recherche d'alternance / stage BUT3</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'),n=document.getElementById('navlinks');
+  if(b)b.addEventListener('click',function(){var o=n.classList.toggle('open');b.classList.toggle('open',o);b.setAttribute('aria-expanded',o);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  // jauges techniques
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=e.target.querySelector('i');if(i)i.style.width=e.target.dataset.v+'%';bo.unobserve(e.target);}})},{threshold:.4});
+  document.querySelectorAll('.bar').forEach(function(el){bo.observe(el);});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adem Ben Maamar — Portfolio BUT Informatique</title>
+<meta name="description" content="Portfolio d'Adem Ben Maamar, étudiant en BUT Informatique à l'IUT de Villetaneuse — Université Sorbonne Paris Nord.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-bar">
+    <a class="brand" href="index.html" aria-label="Accueil">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>BUT Informatique</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navlinks"><a href="index.html" class="active">Accueil</a><a href="presentation.html">Parcours</a><a href="competences.html">Compétences</a><a href="projets.html">Projets</a><a href="stage.html">Stage</a><a href="bilan.html">Bilan</a><a href="veille.html">Veille</a><a href="contact.html" class="nav-cta">Me contacter</a></div>
+  </div>
+</nav>
+<header class="hero">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">Portfolio évolutif · BUT Informatique</span>
+      <h1>Adem<br><span class="ln2">Ben Maamar</span></h1>
+      <div class="role">// Étudiant BUT2 · IUT Villetaneuse · Sorbonne Paris Nord</div>
+      <p class="lead">Développeur en formation, passionné par le <b>développement logiciel</b>
+        et la <b>donnée</b>. Du projet <b>Mnémosyne</b> (suivi des cohortes en Flask) au monitoring
+        de 300&nbsp;sites d'énergies renouvelables en stage à la <b>TotalEnergies Digital&nbsp;Factory</b>,
+        ce portfolio retrace ma trajectoire et mes compétences.</p>
+      <div class="hero-cta">
+        <a href="projets.html" class="btn btn-primary">Voir mes projets <span class="arr">&rarr;</span></a>
+        <a href="stage.html" class="btn btn-ghost">Mon stage TDF <span class="arr">&rarr;</span></a>
+        <a href="presentation.html" class="btn btn-ghost">Mon parcours</a>
+      </div>
+      <div class="hero-chips">
+        <span class="chip"><b>10+</b> SAÉ &amp; projets</span>
+        <span class="chip"><b>8</b> semaines de stage</span>
+        <span class="chip"><b>2</b> ans de BUT</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/adem.jpg" alt="Portrait d'Adem Ben Maamar">
+      <div class="badge"><span class="dot"></span><span><small>En recherche</small><b>Alternance / Stage BUT3</b></span></div>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="s-head reveal">
+      <div class="s-eyebrow">À propos · Présentation personnelle</div>
+      <h2 class="s-title">Qui suis-<em>je</em>&nbsp;?</h2>
+      <p class="s-lead">La logique de mon parcours, mon projet professionnel, mes qualités et ce que cette année de BUT2 m'a apporté.</p>
+    </div>
+
+    <div class="grid g-2" style="align-items:start">
+      <div class="reveal prose">
+        <p>Je m'appelle <strong>Adem Ben Maamar</strong>, je suis en <strong>2ᵉ année de BUT Informatique</strong> à l'IUT de
+        Villetaneuse (Université Sorbonne Paris Nord), à <strong>Montfermeil&nbsp;(93)</strong>. Avant et pendant mes études,
+        j'ai enchaîné des métiers de terrain exigeants — un an en <strong>boulangerie</strong>, sept mois comme
+        <strong>serveur</strong>, deux mois chez <strong>BNP&nbsp;Paribas</strong> — qui m'ont donné le goût du travail bien
+        fait et du collectif. Si je me suis orienté vers l'informatique, c'est pour une raison simple&nbsp;:
+        <strong>transformer une idée en quelque chose qui fonctionne et qui rend service</strong>. Mon
+        <strong>stage à la TotalEnergies Digital Factory</strong> a confirmé cette voie&nbsp;: voir mon code partir en
+        production, dans une équipe internationale, m'a fait passer du statut d'étudiant à celui de développeur — et a
+        précisé mon ambition.</p>
+
+        <h3>Pourquoi l'informatique&nbsp;?</h3>
+        <p>Ce qui me motive, c'est de <strong>rendre des données et des outils réellement utiles</strong>. Sur
+        <strong>Mnémosyne</strong>, l'enjeu était de rendre lisible le parcours de cohortes entières grâce à un diagramme
+        clair&nbsp;; en stage, de fournir aux équipes un générateur de données puis un tableau de bord fiable. Mon
+        <strong>domaine de prédilection</strong> se dessine donc nettement&nbsp;: le <strong>développement d'applications
+        orienté données</strong>, là où le code, la base de données et l'interface se rejoignent pour produire de
+        l'information exploitable.</p>
+
+        <h3>Mon projet professionnel</h3>
+        <p><strong>Secteur visé&nbsp;:</strong> le développement logiciel en entreprise, avec un attrait fort pour les
+        environnements <strong>data et industriels</strong> (énergie, monitoring, outils internes) découverts en stage.
+        <strong>Technologies de prédilection&nbsp;:</strong> <strong>Python/Flask</strong> pour le traitement et le back-end,
+        <strong>JavaScript/Angular</strong> pour le front, autour de bases de données <strong>SQL</strong>.
+        <strong>Métier&nbsp;:</strong> développeur full-stack ou orienté données, capable d'aller de la modélisation
+        jusqu'à la mise en production.</p>
+      </div>
+
+      <aside class="card reveal d1">
+        <h3 style="margin-bottom:1rem">En bref</h3>
+        <div style="display:flex;flex-direction:column;gap:.6rem">
+          <div class="meta"><div class="k">Localisation</div><div class="v">Montfermeil (93)</div></div>
+          <div class="meta"><div class="k">Formation</div><div class="v">BUT2 Informatique — IUT Villetaneuse</div></div>
+          <div class="meta"><div class="k">Langues</div><div class="v">Français · Anglais (B1) · Espagnol (A2)</div></div>
+          <div class="meta"><div class="k">Centres d'intérêt</div><div class="v">Football · Informatique</div></div>
+          <div class="meta"><div class="k">Objectif</div><div class="v">Alternance / stage de BUT3</div></div>
+        </div>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:1.1rem;width:100%;justify-content:center">Me contacter <span class="arr">&rarr;</span></a>
+      </aside>
+    </div>
+
+    <h2 class="s-title" style="font-size:1.4rem;margin:2.8rem 0 .6rem">Mes qualités, <em>par l'exemple</em></h2>
+    <p class="s-lead" style="margin-top:0;margin-bottom:1.3rem">Je conserve les quatre qualités de mon CV — mais je les illustre désormais par des situations concrètes.</p>
+    <div class="grid g-4">
+      <div class="card reveal"><div class="ic">🤝</div><h3>Travail d'équipe</h3><p>Sur Mnémosyne, j'ai travaillé à cinq (équipe SATURNE&nbsp;2)&nbsp;: répartition des tâches et gestion du code avec Git. En stage, intégration à une squad multidisciplinaire.</p></div>
+      <div class="card reveal d1"><div class="ic red">🗣️</div><h3>Communication claire</h3><p>À la TotalEnergies Digital Factory, les réunions quotidiennes se tenaient en anglais avec un partenaire en Inde&nbsp;: il fallait exposer clairement ses avancées et ses blocages.</p></div>
+      <div class="card reveal d2"><div class="ic">🧠</div><h3>Autonomie</h3><p>Pour contribuer au projet GRP, j'ai appris Angular quasiment seul, en quelques jours, et livré mes premières fonctionnalités validées par l'équipe.</p></div>
+      <div class="card reveal d3"><div class="ic red">⏱️</div><h3>Ponctualité</h3><p>Un an en boulangerie, avec des horaires très matinaux&nbsp;: fiabilité et régularité y sont non négociables — des réflexes que je garde dans mon travail.</p></div>
+    </div>
+
+    <h2 class="s-title" style="font-size:1.4rem;margin:2.8rem 0 .8rem">Du BUT1 au <em>BUT2</em></h2>
+    <div class="callout soft reveal">
+      <span class="tag-lbl">Bilan 2025-2026 — mon évolution</span>
+      <p>En <strong>BUT1</strong>, mes premières SAÉ étaient surtout <strong>individuelles et techniques</strong>&nbsp;: faire
+      fonctionner un programme, modéliser une base. En <strong>BUT2</strong>, j'ai changé d'échelle&nbsp;: un
+      <strong>projet de groupe long</strong> (Mnémosyne, construit en S3 puis repris et amélioré en S4, avec analyse de
+      l'existant et reprise de code), puis une <strong>vraie immersion en équipe professionnelle</strong> pendant mon
+      stage. Mes acquis pour la suite&nbsp;: l'<strong>autonomie d'apprentissage</strong>, les <strong>bonnes pratiques</strong>
+      (Git, revues de code, découpage en tickets) et une <strong>vision du cycle de vie complet d'un produit</strong>, de la
+      planification au déploiement.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="s-head reveal">
+      <div class="s-eyebrow"><span class="num">01</span> Un outil évolutif</div>
+      <h2 class="s-title">Un portfolio qui <em>raconte une progression</em></h2>
+      <p class="s-lead">Ce site n'est pas une simple vitrine&nbsp;: c'est un processus continu de réflexion.
+        Chaque projet y est une <b>trace d'apprentissage</b> mise en regard du référentiel de compétences,
+        de mon autoévaluation et d'une analyse réflexive.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal d1"><div class="pic">🎯</div><div class="pn">Pilier 01</div><h3>Référentiel de compétences</h3><p>Réaliser, Optimiser, Administrer, Gérer les données, Conduire un projet, Collaborer.</p></div>
+      <div class="pillar reveal d2"><div class="pic">🧩</div><div class="pn">Pilier 02</div><h3>Traces d'apprentissage</h3><p>Des SAÉ et projets concrets, sélectionnés et commentés comme preuves.</p></div>
+      <div class="pillar reveal d3"><div class="pic">📊</div><div class="pn">Pilier 03</div><h3>Autoévaluation</h3><p>Une mesure honnête de mon degré de maîtrise pour chaque compétence visée.</p></div>
+      <div class="pillar reveal d4"><div class="pic">💭</div><div class="pn">Pilier 04</div><h3>Analyses réflexives</h3><p>Ce que chaque expérience m'a appris — et mes pistes de progression.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="s-head reveal">
+      <div class="s-eyebrow"><span class="num">02</span> Sélection</div>
+      <h2 class="s-title">Mes <em>traces</em> phares</h2>
+      <p class="s-lead">Du terminal au tableau de bord industriel international.</p>
+    </div>
+    <div class="sae-grid">
+      <article class="sae reveal">
+        <div class="sae-head red"><span class="badge">Stage · S4 · 8 semaines</span><h3>Total Energies Digital Factory</h3><p>Développeur Python/Flask &amp; Angular</p></div>
+        <div class="sae-body"><p>Générateur de données industrielles, puis filtrage, export et import Excel sur une application Angular monitorant 300 sites d'énergies renouvelables.</p>
+          <div class="tags"><span class="tag red">Python</span><span class="tag red">Angular</span><span class="tag red">Agile</span></div></div>
+        <div class="sae-foot"><span class="meta">JAN–MARS 2026</span><a class="sae-link" href="stage.html">Voir <span>&rarr;</span></a></div>
+      </article>
+      <article class="sae reveal d1">
+        <div class="sae-head"><span class="badge">SAÉ BUT2 · Groupe</span><h3>Mnémosyne</h3><p>Suivi des cohortes — Flask &amp; API ScoDoc</p></div>
+        <div class="sae-body"><p>Application web de suivi du devenir des promotions, construite en S3 puis reprise et améliorée en S4 (refonte de la base, Sankey multi-niveaux).</p>
+          <div class="tags"><span class="tag">Python/Flask</span><span class="tag">SQLite/SQL</span><span class="tag">API ScoDoc</span></div></div>
+        <div class="sae-foot"><span class="meta">BUT2 · S3 → S4</span><a class="sae-link" href="projets/mnemosyne.html">Voir <span>&rarr;</span></a></div>
+      </article>
+      <article class="sae reveal d2">
+        <div class="sae-head"><span class="badge">SAÉ 1.01 · S1</span><h3>Jeu d'échecs en Java</h3><p>Application terminal complète</p></div>
+        <div class="sae-body"><p>POO, héritage, polymorphisme. Logique des déplacements, échec et mat, roque — mon premier grand projet Java.</p>
+          <div class="tags"><span class="tag">Java</span><span class="tag">POO</span></div></div>
+        <div class="sae-foot"><span class="meta">BUT1 · S1</span><a class="sae-link" href="projets/sae101.html">Voir <span>&rarr;</span></a></div>
+      </article>
+      <article class="sae reveal d3">
+        <div class="sae-head"><span class="badge">SAÉ 2.04 · S2</span><h3>Visualisation de données</h3><p>Catastrophes climatiques</p></div>
+        <div class="sae-body"><p>Cycle complet sur un dataset réel&nbsp;: MCD &rarr; SQL &rarr; Python. Visualisations avec pandas et matplotlib.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">SQL</span></div></div>
+        <div class="sae-foot"><span class="meta">BUT1 · S2</span><a class="sae-link" href="projets/sae204.html">Voir <span>&rarr;</span></a></div>
+      </article>
+    </div>
+    <div style="margin-top:2rem;display:flex;gap:.8rem;flex-wrap:wrap">
+      <a href="projets.html" class="btn btn-primary">Tous les projets <span class="arr">&rarr;</span></a>
+      <a href="bilan.html" class="btn btn-ghost">Mon bilan &amp; mes objectifs</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="ftop"><i></i></div>
+  <div class="foot-in">
+    <a class="brand" href="index.html">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>Portfolio · BUT Informatique</small></span>
+    </a>
+    <nav class="foot-links" aria-label="Pied de page"><a href="index.html">Accueil</a><a href="presentation.html">Parcours</a><a href="competences.html">Compétences</a><a href="projets.html">Projets</a><a href="stage.html">Stage</a><a href="bilan.html">Bilan</a><a href="veille.html">Veille</a><a href="contact.html">Contact</a></nav>
+    <div class="foot-copy">
+      <span>© 2026 Adem Ben Maamar — IUT Villetaneuse · Université Sorbonne Paris Nord</span>
+      <span>En recherche d'alternance / stage BUT3</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'),n=document.getElementById('navlinks');
+  if(b)b.addEventListener('click',function(){var o=n.classList.toggle('open');b.classList.toggle('open',o);b.setAttribute('aria-expanded',o);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  // jauges techniques
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=e.target.querySelector('i');if(i)i.style.width=e.target.dataset.v+'%';bo.unobserve(e.target);}})},{threshold:.4});
+  document.querySelectorAll('.bar').forEach(function(el){bo.observe(el);});
+})();
+</script>
+</body>
+</html>

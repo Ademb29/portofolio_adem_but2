@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stage TDF — Adem Ben Maamar</title>
+<meta name="description" content="Portfolio d'Adem Ben Maamar, étudiant en BUT Informatique à l'IUT de Villetaneuse — Université Sorbonne Paris Nord.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-bar">
+    <a class="brand" href="index.html" aria-label="Accueil">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>BUT Informatique</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navlinks"><a href="index.html">Accueil</a><a href="presentation.html">Parcours</a><a href="competences.html">Compétences</a><a href="projets.html">Projets</a><a href="stage.html" class="active">Stage</a><a href="bilan.html">Bilan</a><a href="veille.html">Veille</a><a href="contact.html" class="nav-cta">Me contacter</a></div>
+  </div>
+</nav>
+<header class="phead red">
+  <div class="phead-in">
+    <span class="pbadge"> Stage · BUT2 · 26 jan – 20 mars 2026</span>
+    <h1>Total Energies<br>Digital Factory</h1>
+    <p>Développeur informatique — 8 semaines au cœur d'une « usine logicielle » internationale à Paris.</p>
+  </div>
+</header>
+
+<div class="body-wrap prose">
+  <a href="projets.html" class="back">&larr; Retour aux projets</a>
+
+  <div class="kpis">
+    <div class="kpi"><div class="v">8</div><div class="l">Semaines</div></div>
+    <div class="kpi"><div class="v">2</div><div class="l">Équipes intégrées</div></div>
+    <div class="kpi"><div class="v">300+</div><div class="l">Sites monitorés</div></div>
+    <div class="kpi"><div class="v">EN</div><div class="l">Réunions en anglais</div></div>
+  </div>
+
+  <div class="meta-grid">
+    <div class="meta"><div class="k">Entreprise</div><div class="v">TotalEnergies Digital Factory</div></div>
+    <div class="meta"><div class="k">Poste</div><div class="v">Développeur</div></div>
+    <div class="meta"><div class="k">Méthode</div><div class="v">Agile · Scoping · Runs</div></div>
+    <div class="meta"><div class="k">Lieu</div><div class="v">Paris 2ᵉ — open space</div></div>
+  </div>
+
+  <h2>L'entreprise</h2>
+  <p>La <strong>TotalEnergies Digital Factory (TDF)</strong> est le centre d'excellence technologique du groupe.
+  Organisée comme une véritable « usine numérique », elle réunit plus de <strong>300 experts</strong> — développeurs,
+  data scientists, product owners — en équipes autonomes appelées <strong>Squads</strong>. Elle travaille en partenariat
+  avec <strong>TCS (Tata Consultancy Services)</strong>, ce qui rend l'<strong>anglais obligatoire</strong> en réunion.
+  Le travail est rythmé par des cycles de 4 mois&nbsp;: semaines de <strong>Scoping</strong> (planification) et
+  <strong>Runs</strong> de 2 semaines pour l'exécution.</p>
+
+  <h2>Aperçu des missions</h2>
+  <p>J'ai contribué à deux projets, dans deux équipes différentes.</p>
+
+  <div class="mission">
+    <div class="mission-h"><div class="n">1</div><div><h4>Générateur de données industrielles</h4><p>Python / Flask · projet WOE (sites offshore)</p></div></div>
+    <div class="mission-b"><p>Pour tester les outils sans toucher aux données réelles, j'ai développé un générateur de données fictives&nbsp;:
+      classe <code>NumValue</code> et classes filles (pression, courant…), routes Flask, saisie d'une plage de dates,
+      puis <strong>persistance en base SQL</strong> pour rejouer des scénarios de test complets.</p>
+      <div class="pills"><span class="pill">Python</span><span class="pill">Flask</span><span class="pill">POO</span><span class="pill">SQL</span></div></div>
+  </div>
+  <div class="mission">
+    <div class="mission-h red"><div class="n">2</div><div><h4>Tableau de bord Angular (branche GRP)</h4><p>Monitoring de 300 sites d'énergies renouvelables</p></div></div>
+    <div class="mission-b"><p>Montée en compétence rapide sur Angular pour traiter trois tickets&nbsp;: <strong>filtrage automatique</strong>
+      sur l'année courante au chargement, <strong>export Excel</strong> des données filtrées, et un <strong>import Excel</strong>
+      avec comparaison ligne par ligne (anti-doublons) — le ticket le plus complexe, qui a transformé des heures de saisie
+      manuelle en quelques secondes. Premier Pull Request validé par la Squad sur GitHub.</p>
+      <div class="pills"><span class="pill">Angular</span><span class="pill">TypeScript</span><span class="pill">JavaScript</span><span class="pill">GitHub · Jira</span></div></div>
+  </div>
+
+  <h2>Ce que j'ai découvert du monde professionnel</h2>
+  <div class="grid g-2" style="margin:1.2rem 0">
+    <div class="card reveal"><div class="ic">🔄</div><h3>Une méthode de travail</h3><p>L'agilité concrète&nbsp;: découper en tickets, livrer par petits incréments, faire valider par revue de code. La semaine de <strong>Scoping</strong> m'a appris à <em>suspendre le code</em> pour réfléchir collectivement à la définition du succès (méthode MVE).</p></div>
+    <div class="card reveal d1"><div class="ic red">🌍</div><h3>Une culture d'entreprise</h3><p>Un environnement international où l'<strong>anglais</strong> est la langue de travail, où l'on collabore au quotidien avec des équipes en Inde, et où la documentation et la communication comptent autant que le code.</p></div>
+    <div class="card reveal d2"><div class="ic">🗣️</div><h3>L'importance de la vulgarisation</h3><p>Expliquer une fonctionnalité à un product owner ou à un gestionnaire non technique fait pleinement partie du métier&nbsp;: savoir traduire la technique en valeur d'usage.</p></div>
+    <div class="card reveal d3"><div class="ic">🧭</div><h3>Une vision globale</h3><p>J'ai compris le <strong>cycle de vie complet d'un produit</strong>, de la planification stratégique au déploiement — ce que les SAÉ, plus courtes, ne montraient pas encore.</p></div>
+  </div>
+
+  <h2>Deux compétences, démontrées par des preuves</h2>
+
+  <div class="proof reveal">
+    <span class="ptag">Compétence · Réaliser</span>
+    <h3>Développer et livrer une fonctionnalité en production</h3>
+    <dl>
+      <dt>Démontrer</dt><dd>J'ai conçu, codé et livré l'<strong>import Excel</strong> du tableau de bord Angular, intégré à une base de code partagée.</dd>
+      <dt>Justifier</dt><dd>La fonctionnalité devait éviter les doublons&nbsp;: j'ai mis en place une comparaison ligne par ligne avant insertion, sans rechargement de page.</dd>
+      <dt>Argumenter</dt><dd>Au-delà du code, j'ai dû respecter les conventions de l'équipe, passer la <strong>revue de code</strong> et faire valider mon Pull Request — la réalisation ne s'arrête pas au « ça marche ».</dd>
+      <dt>Exemple</dt><dd>Une mise à jour mensuelle qui prenait plusieurs heures manuellement se fait désormais en quelques secondes.</dd>
+    </dl>
+  </div>
+
+  <div class="proof reveal">
+    <span class="ptag">Compétence · Collaborer</span>
+    <h3>S'intégrer dans une équipe internationale</h3>
+    <dl>
+      <dt>Démontrer</dt><dd>J'ai travaillé au sein d'une Squad (PO, tech lead, data engineer) avec des <strong>réunions quotidiennes en anglais</strong> et un partenaire en Inde.</dd>
+      <dt>Justifier</dt><dd>Utiliser <strong>Git, GitHub et Jira</strong> comme outils de production imposait une rigueur de communication&nbsp;: messages de commit clairs, tickets à jour, questions posées au bon moment.</dd>
+      <dt>Argumenter</dt><dd>J'ai dû apprendre <strong>Angular en autonomie</strong> pour ne pas ralentir l'équipe — l'adaptabilité est une compétence collective autant qu'individuelle.</dd>
+      <dt>Exemple</dt><dd>Mon premier Pull Request a été validé dès la première semaine sur le projet Angular.</dd>
+    </dl>
+  </div>
+
+  <h2>Mon regard critique</h2>
+  <div class="callout soft red">
+    <span class="tag-lbl">Analyse réflexive — l'angle critique</span>
+    <p>Tout n'a pas été simple. La <strong>barrière de la langue</strong> m'a parfois ralenti dans les réunions techniques
+    rapides, et l'absence de documentation sur certaines parties du code m'a fait perdre du temps au démarrage —
+    j'ai compris à quel point une bonne documentation est précieuse. Avec le recul, j'aurais dû <strong>poser mes questions
+    plus tôt</strong> plutôt que de chercher seul trop longtemps. C'est précisément ce que je veux améliorer&nbsp;: oser
+    solliciter l'équipe, et soigner ma propre documentation pour les suivants.</p>
+  </div>
+
+  <div class="quote red" style="margin-top:1.8rem">
+    <blockquote>Ce stage m'a fait passer du statut d'étudiant à celui de développeur capable de s'intégrer dans un projet réel de grande envergure.</blockquote>
+    <cite>— Adem Ben Maamar</cite>
+  </div>
+
+  <div style="margin-top:2rem;display:flex;gap:.8rem;flex-wrap:wrap">
+    <a href="bilan.html" class="btn btn-primary">Mon bilan &amp; mes objectifs <span class="arr">&rarr;</span></a>
+    <a href="projets/mnemosyne.html" class="btn btn-ghost">Voir Mnémosyne</a>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="ftop"><i></i></div>
+  <div class="foot-in">
+    <a class="brand" href="index.html">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>Portfolio · BUT Informatique</small></span>
+    </a>
+    <nav class="foot-links" aria-label="Pied de page"><a href="index.html">Accueil</a><a href="presentation.html">Parcours</a><a href="competences.html">Compétences</a><a href="projets.html">Projets</a><a href="stage.html">Stage</a><a href="bilan.html">Bilan</a><a href="veille.html">Veille</a><a href="contact.html">Contact</a></nav>
+    <div class="foot-copy">
+      <span>© 2026 Adem Ben Maamar — IUT Villetaneuse · Université Sorbonne Paris Nord</span>
+      <span>En recherche d'alternance / stage BUT3</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'),n=document.getElementById('navlinks');
+  if(b)b.addEventListener('click',function(){var o=n.classList.toggle('open');b.classList.toggle('open',o);b.setAttribute('aria-expanded',o);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  // jauges techniques
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=e.target.querySelector('i');if(i)i.style.width=e.target.dataset.v+'%';bo.unobserve(e.target);}})},{threshold:.4});
+  document.querySelectorAll('.bar').forEach(function(el){bo.observe(el);});
+})();
+</script>
+</body>
+</html>

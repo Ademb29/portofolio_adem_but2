@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAÉ 2.02 · BUT1 · Semestre 2 — Adem Ben Maamar</title>
+<meta name="description" content="Portfolio d'Adem Ben Maamar, étudiant en BUT Informatique à l'IUT de Villetaneuse — Université Sorbonne Paris Nord.">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-bar">
+    <a class="brand" href="../index.html" aria-label="Accueil">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>BUT Informatique</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navlinks"><a href="../index.html">Accueil</a><a href="../presentation.html">Parcours</a><a href="../competences.html">Compétences</a><a href="../projets.html" class="active">Projets</a><a href="../stage.html">Stage</a><a href="../bilan.html">Bilan</a><a href="../veille.html">Veille</a><a href="../contact.html" class="nav-cta">Me contacter</a></div>
+  </div>
+</nav>
+<header class="phead red">
+  <div class="phead-in">
+    <span class="pbadge"> SAÉ 2.02 · BUT1 · Semestre 2</span>
+    <h1>Comparaison<br>d'algorithmes</h1>
+    <p>Étude comparative d'algorithmes de tri et de recherche, avec mesures de performance empiriques.</p>
+  </div>
+</header>
+
+<div class="body-wrap prose">
+  <a href="../projets.html" class="back">&larr; Retour aux projets</a>
+
+  <div class="meta-grid"><div class="meta"><div class="k">Semestre</div><div class="v">S2 — BUT1</div></div><div class="meta"><div class="k">Équipe</div><div class="v">Individuel</div></div><div class="meta"><div class="k">Technologies</div><div class="v">Java · Algorithmique</div></div><div class="meta"><div class="k">Compétences</div><div class="v">Optimiser</div></div></div>
+
+  <h2>Le projet en bref</h2>
+  <p>Implémentation et comparaison de plusieurs algorithmes de tri (bulles, insertion, fusion, rapide) et de recherche (linéaire, dichotomique), avec mesure des temps d'exécution sur différentes tailles de données.</p><p>L'objectif : comprendre empiriquement les différences de complexité algorithmique — pas seulement en théorie, mais en observant les résultats réels sur des jeux de données variés.</p>
+
+  <h2>Déroulement</h2>
+  <div class="steps"><div class="step reveal"><div class="n">1</div><div class="step-b"><h4>Implémentation des algorithmes</h4><p>Codage de chaque algorithme en Java selon un protocole de test uniforme.</p></div></div><div class="step reveal"><div class="n">2</div><div class="step-b"><h4>Mesures de performance</h4><p>Chronométrage sur des tableaux de 100, 1 000, 10 000 et 100 000 éléments, puis comparaison.</p></div></div><div class="step reveal"><div class="n">3</div><div class="step-b"><h4>Analyse & rapport</h4><p>Rédaction d'une analyse liant la théorie — O(n²), O(n log n) — aux observations pratiques.</p></div></div></div>
+
+  <h2>Ce que j'en retiens</h2>
+  <div class="callout soft red">
+    <p>Voir en temps réel qu'un algorithme en O(n²) devient inutilisable à 100 000 éléments là où un O(n log n) reste instantané, c'est plus parlant que n'importe quel cours théorique. La complexité algorithmique n'est plus une abstraction pour moi.</p>
+  </div>
+
+  <h2>Compétences mobilisées</h2>
+  <div class="grid g-2" style="margin:1rem 0 .4rem">
+    <div class="comp-line reveal"><span class="ck">Optimiser</span><p>Évaluer et comparer des algorithmes selon leur complexité, et justifier un choix par la mesure.</p></div><div class="comp-line reveal"><span class="ck">Analyser</span><p>Confronter un modèle théorique à des données empiriques et en tirer des conclusions argumentées.</p></div>
+  </div>
+
+  <h2>Concepts &amp; technologies</h2>
+  <div class="pills"><span class="pill">Complexité O(n)</span><span class="pill">Tri fusion</span><span class="pill">Dichotomie</span><span class="pill">Benchmarking</span><span class="pill">Java</span></div>
+
+  <div class="prevnext"><a href="sae201.html" class="pn-link">&larr; <span><small>Précédent</small>Application Java/FX</span></a><a href="sae203.html" class="pn-link right"><span><small>Suivant</small>Admin. système Linux</span> &rarr;</a></div>
+</div>
+
+<footer class="foot">
+  <div class="ftop"><i></i></div>
+  <div class="foot-in">
+    <a class="brand" href="../index.html">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>Portfolio · BUT Informatique</small></span>
+    </a>
+    <nav class="foot-links" aria-label="Pied de page"><a href="../index.html">Accueil</a><a href="../presentation.html">Parcours</a><a href="../competences.html">Compétences</a><a href="../projets.html">Projets</a><a href="../stage.html">Stage</a><a href="../bilan.html">Bilan</a><a href="../veille.html">Veille</a><a href="../contact.html">Contact</a></nav>
+    <div class="foot-copy">
+      <span>© 2026 Adem Ben Maamar — IUT Villetaneuse · Université Sorbonne Paris Nord</span>
+      <span>En recherche d'alternance / stage BUT3</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'),n=document.getElementById('navlinks');
+  if(b)b.addEventListener('click',function(){var o=n.classList.toggle('open');b.classList.toggle('open',o);b.setAttribute('aria-expanded',o);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  // jauges techniques
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=e.target.querySelector('i');if(i)i.style.width=e.target.dataset.v+'%';bo.unobserve(e.target);}})},{threshold:.4});
+  document.querySelectorAll('.bar').forEach(function(el){bo.observe(el);});
+})();
+</script>
+</body>
+</html>

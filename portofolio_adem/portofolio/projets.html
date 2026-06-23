@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAÉ & Projets — Adem Ben Maamar</title>
+<meta name="description" content="Portfolio d'Adem Ben Maamar, étudiant en BUT Informatique à l'IUT de Villetaneuse — Université Sorbonne Paris Nord.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-bar">
+    <a class="brand" href="index.html" aria-label="Accueil">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>BUT Informatique</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navlinks"><a href="index.html">Accueil</a><a href="presentation.html">Parcours</a><a href="competences.html">Compétences</a><a href="projets.html" class="active">Projets</a><a href="stage.html">Stage</a><a href="bilan.html">Bilan</a><a href="veille.html">Veille</a><a href="contact.html" class="nav-cta">Me contacter</a></div>
+  </div>
+</nav>
+<header class="phead">
+  <div class="phead-in">
+    <span class="pbadge"> Traces d'apprentissage</span>
+    <h1>SAÉ &amp; projets</h1>
+    <p>Du terminal au tableau de bord industriel — chaque projet est une preuve de compétence commentée.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="s-head reveal">
+      <div class="s-eyebrow"><span class="num">01</span> Projets universitaires BUT2</div>
+      <h2 class="s-title">Analyse <em>détaillée</em></h2>
+      <p class="s-lead">Mes deux projets universitaires majeurs de 2ᵉ année, analysés selon la grille du portfolio&nbsp;:
+        objectifs, tâches, compétences acquises, preuves et pistes d'amélioration.</p>
+    </div>
+
+    <div class="tbl-wrap reveal" style="margin-bottom:2rem">
+      <div class="tbl-cap"><span class="tag">Projet n°1 · S3</span><b>Mnémosyne — Suivi de cohortes (groupe)</b></div>
+      <div class="proj-scroll"><table class="proj">
+        <thead><tr><th style="width:18%">Objectifs</th><th style="width:24%">Tâches réalisées</th><th style="width:18%">Compétences</th><th style="width:24%">Preuves</th><th style="width:16%">Pistes d'amélioration</th></tr></thead>
+        <tbody><tr>
+          <td><b>Principal&nbsp;:</b> construire une application web de suivi du devenir des cohortes (diagramme de Sankey à partir de l'API ScoDoc).<br><br><b>Secondaire&nbsp;:</b> rendre les parcours lisibles, dans le respect du RGPD (données anonymisées).</td>
+          <td><ul>
+            <li>Architecture <b>MVC en Flask</b> (controllers / model / service).</li>
+            <li>Base <b>SQLite</b> et requêtes SQL ; récupération des données via l'API ScoDoc.</li>
+            <li>Première version du <b>diagramme de Sankey</b> (un seul niveau).</li>
+            <li><b>Ma contribution&nbsp;:</b> conception de la base et requêtes SQL, et participation au développement du Sankey.</li>
+          </ul></td>
+          <td><ul>
+            <li><b>Techniques&nbsp;:</b> Python/Flask, SQLite/SQL, API REST (ScoDoc), MVC.</li>
+            <li class="red"><b>Transversales&nbsp;:</b> conduire un projet, collaborer (Git).</li>
+          </ul></td>
+          <td><b>Démontré&nbsp;:</b> application web fonctionnelle (Flask + SQLite).<br><b>Exemple&nbsp;:</b> diagramme de Sankey affichant le parcours d'une cohorte, données anonymisées.<br><b>Justifié&nbsp;:</b> architecture assez claire pour être reprise et améliorée au S4.</td>
+          <td>Refondre la base (référentiel + compétences au lieu d'un champ TEXT)&nbsp;; Sankey multi-niveaux et lisible&nbsp;; ajouter README + charte&nbsp;; alléger le front-end.</td>
+        </tr></tbody>
+      </table></div>
+    </div>
+
+    <div class="tbl-wrap reveal" style="margin-bottom:1rem">
+      <div class="tbl-cap red"><span class="tag">Projet n°2 · S4</span><b>Mnémosyne — amélioration (équipe SATURNE 2)</b></div>
+      <div class="proj-scroll"><table class="proj">
+        <thead><tr><th style="width:18%">Objectifs</th><th style="width:26%">Tâches réalisées</th><th style="width:17%">Compétences</th><th style="width:23%">Preuves</th><th style="width:16%">Pistes (BUT3)</th></tr></thead>
+        <tbody><tr>
+          <td><b>Principal&nbsp;:</b> reprendre une application Mnémosyne du S3 pour <b>refondre sa base de données</b> et <b>enrichir le diagramme de Sankey</b> (parcours plus lisibles).<br><br><b>Secondaire&nbsp;:</b> moderniser l'interface (charte, page d'accueil allégée).</td>
+          <td><ul>
+            <li><b>Analyse de l'existant&nbsp;:</b> comparaison des 4 projets S3 sur 4 critères (langage, BDD, visuel, reprise), notés sur 20.</li>
+            <li><b>Choix argumenté</b> de la base&nbsp;: reprise de notre projet Flask, en intégrant la modélisation d'un autre groupe et l'idée d'une table SCENARIO.</li>
+            <li>Refonte du <b>modèle (MEA)</b> et du script de création&nbsp;: ajout d'un référentiel et des compétences.</li>
+            <li><b>Sankey multi-niveaux</b> (BUT1 → décisions → BUT2 → … → BUT3 → Diplômé / Redoublement / Abandon) + refonte du front-end.</li>
+            <li><b>Ma contribution&nbsp;:</b> participation à la notation des projets, à la refonte de la base/des requêtes SQL et au diagramme de Sankey.</li>
+          </ul></td>
+          <td><ul>
+            <li><b>Techniques&nbsp;:</b> Python/Flask, Jinja, SQLite/SQL, modélisation (MEA), Git.</li>
+            <li class="red"><b>Transversales&nbsp;:</b> conduire un projet, optimiser une application, travailler en équipe.</li>
+          </ul></td>
+          <td><b>Démontré&nbsp;:</b> application améliorée à partir d'une base existante (reprise de code).<br><b>Exemple&nbsp;:</b> nouveau Sankey multi-niveaux + base restructurée (référentiel, compétences, table SCENARIO).<br><b>Justifié&nbsp;:</b> choix de la base appuyé sur une grille de notation /20 (le plus simple à reprendre, pas le mieux noté).</td>
+          <td>Finaliser la charte + README&nbsp;; ajouter des tests automatisés&nbsp;; déployer l'application.</td>
+        </tr></tbody>
+      </table></div>
+    </div>
+    <div style="margin-top:1.2rem"><a href="projets/mnemosyne.html" class="btn btn-ghost">Voir le détail de Mnémosyne (S3 → S4) <span class="arr">&rarr;</span></a></div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="s-head reveal">
+      <div class="s-eyebrow"><span class="num">02</span> BUT2 — Expériences phares</div>
+      <h2 class="s-title">Projets <em>BUT2</em></h2>
+    </div>
+    <div class="sae-grid">
+      <article class="sae reveal">
+        <div class="sae-head red"><span class="badge">Stage · S4 · 8 semaines</span><h3>Total Energies Digital Factory</h3><p>Développeur Python/Flask · Angular · Paris</p></div>
+        <div class="sae-body"><p>Générateur de données industrielles, puis filtrage dynamique, export et import Excel sur une app Angular monitorant 300 sites renouvelables.</p>
+          <div class="tags"><span class="tag red">Python</span><span class="tag red">Flask</span><span class="tag red">Angular</span><span class="tag gray">Anglais</span></div></div>
+        <div class="sae-foot"><span class="meta">JAN–MARS 2026</span><a class="sae-link" href="stage.html">Voir <span>&rarr;</span></a></div>
+      </article>
+      <article class="sae reveal d1">
+        <div class="sae-head"><span class="badge">SAÉ BUT2 · Groupe · Web</span><h3>Mnémosyne</h3><p>Suivi des cohortes — Flask &amp; API ScoDoc</p></div>
+        <div class="sae-body"><p>Application web de suivi du devenir des cohortes&nbsp;: construite en S3, puis reprise et améliorée en S4 (refonte de la base, diagramme de Sankey multi-niveaux).</p>
+          <div class="tags"><span class="tag">Python/Flask</span><span class="tag">SQLite/SQL</span><span class="tag">API ScoDoc</span></div></div>
+        <div class="sae-foot"><span class="meta">BUT2 · S3 → S4</span><a class="sae-link" href="projets/mnemosyne.html">Voir <span>&rarr;</span></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="s-head reveal">
+      <div class="s-eyebrow"><span class="num">03</span> BUT1 — Semestre 1</div>
+      <h2 class="s-title">SAÉ <em>S1</em></h2>
+    </div>
+    <div class="sae-grid">
+      <article class="sae reveal">
+        <div class="sae-head"><span class="badge">SAÉ 1.01 · Java</span><h3>Jeu d'échecs en Java</h3><p>Application terminal complète</p></div>
+        <div class="sae-body"><p>POO, héritage, polymorphisme. Logique des déplacements, échec et mat, roque.</p><div class="tags"><span class="tag">Java</span><span class="tag">POO</span></div></div>
+        <div class="sae-foot"><span class="meta">Réaliser</span><a class="sae-link" href="projets/sae101.html">Voir <span>&rarr;</span></a></div>
+      </article><article class="sae reveal d1">
+        <div class="sae-head"><span class="badge">SAÉ 1.02 · SQL</span><h3>Base de données réseau social</h3><p>MCD → MLD → SQL complet</p></div>
+        <div class="sae-body"><p>Modélisation et implémentation&nbsp;: utilisateurs, publications, commentaires, requêtes d'analyse.</p><div class="tags"><span class="tag">SQL</span><span class="tag">MCD/MLD</span></div></div>
+        <div class="sae-foot"><span class="meta">Gérer</span><a class="sae-link" href="projets/sae102.html">Voir <span>&rarr;</span></a></div>
+      </article><article class="sae reveal d2">
+        <div class="sae-head"><span class="badge">SAÉ 1.03 · Gestion</span><h3>Projet de voyage en groupe</h3><p>Budget, planning, délais</p></div>
+        <div class="sae-body"><p>Simulation avec contraintes réelles. Trello, répartition des tâches, décisions collectives.</p><div class="tags"><span class="tag">Trello</span><span class="tag red">Équipe</span></div></div>
+        <div class="sae-foot"><span class="meta">Conduire</span><a class="sae-link" href="projets/sae103.html">Voir <span>&rarr;</span></a></div>
+      </article><article class="sae reveal d3">
+        <div class="sae-head red"><span class="badge">SAÉ 1.04 · Comm.</span><h3>Exposition &amp; communication</h3><p>Présentation publique</p></div>
+        <div class="sae-body"><p>Prise de parole, vulgarisation et réponses aux questions devant un public varié.</p><div class="tags"><span class="tag red">Oral</span><span class="tag red">Vulgarisation</span></div></div>
+        <div class="sae-foot"><span class="meta">Collaborer</span><a class="sae-link" href="projets/sae104.html">Voir <span>&rarr;</span></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="s-head reveal">
+      <div class="s-eyebrow"><span class="num">04</span> BUT1 — Semestre 2</div>
+      <h2 class="s-title">SAÉ <em>S2</em></h2>
+    </div>
+    <div class="sae-grid">
+      <article class="sae reveal">
+        <div class="sae-head"><span class="badge">SAÉ 2.01 · Java</span><h3>Application Java &amp; interface</h3><p>JavaFX + BDD + MVC</p></div>
+        <div class="sae-body"><p>Interface graphique, connexion SQL via JDBC, architecture en couches.</p><div class="tags"><span class="tag">JavaFX</span><span class="tag">MVC</span></div></div>
+        <div class="sae-foot"><span class="meta">Réaliser</span><a class="sae-link" href="projets/sae201.html">Voir <span>&rarr;</span></a></div>
+      </article><article class="sae reveal d1">
+        <div class="sae-head"><span class="badge">SAÉ 2.02 · Algo</span><h3>Comparaison d'algorithmes</h3><p>Tri &amp; recherche — benchmarks</p></div>
+        <div class="sae-body"><p>Implémentation et comparaison empirique. Analyse de complexité O(n²) vs O(n log n).</p><div class="tags"><span class="tag">Java</span><span class="tag">Algorithmique</span></div></div>
+        <div class="sae-foot"><span class="meta">Optimiser</span><a class="sae-link" href="projets/sae202.html">Voir <span>&rarr;</span></a></div>
+      </article><article class="sae reveal d2">
+        <div class="sae-head red"><span class="badge">SAÉ 2.03 · Linux</span><h3>Administration système</h3><p>VM Debian + serveur LAMP</p></div>
+        <div class="sae-body"><p>Installation Debian, configuration Apache, MySQL, PHP, déploiement d'une app web.</p><div class="tags"><span class="tag">Linux</span><span class="tag">LAMP</span></div></div>
+        <div class="sae-foot"><span class="meta">Administrer</span><a class="sae-link" href="projets/sae203.html">Voir <span>&rarr;</span></a></div>
+      </article><article class="sae reveal d3">
+        <div class="sae-head"><span class="badge">SAÉ 2.04 · Python</span><h3>Visualisation de données</h3><p>Catastrophes climatiques</p></div>
+        <div class="sae-body"><p>Cycle complet MCD → SQL → Python. Visualisations pandas et matplotlib.</p><div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">SQL</span></div></div>
+        <div class="sae-foot"><span class="meta">Analyser</span><a class="sae-link" href="projets/sae204.html">Voir <span>&rarr;</span></a></div>
+      </article><article class="sae reveal">
+        <div class="sae-head red"><span class="badge">SAÉ 2.05 · Pro</span><h3>Recherche d'alternance</h3><p>Enquête, analyse, oral</p></div>
+        <div class="sae-body"><p>Enquête terrain, analyse qualitative, restitution orale des recommandations.</p><div class="tags"><span class="tag red">Enquête</span><span class="tag red">Oral</span></div></div>
+        <div class="sae-foot"><span class="meta">Communiquer</span><a class="sae-link" href="projets/sae205.html">Voir <span>&rarr;</span></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="ftop"><i></i></div>
+  <div class="foot-in">
+    <a class="brand" href="index.html">
+      <span class="mark">A</span>
+      <span><b>Adem Ben Maamar</b><small>Portfolio · BUT Informatique</small></span>
+    </a>
+    <nav class="foot-links" aria-label="Pied de page"><a href="index.html">Accueil</a><a href="presentation.html">Parcours</a><a href="competences.html">Compétences</a><a href="projets.html">Projets</a><a href="stage.html">Stage</a><a href="bilan.html">Bilan</a><a href="veille.html">Veille</a><a href="contact.html">Contact</a></nav>
+    <div class="foot-copy">
+      <span>© 2026 Adem Ben Maamar — IUT Villetaneuse · Université Sorbonne Paris Nord</span>
+      <span>En recherche d'alternance / stage BUT3</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'),n=document.getElementById('navlinks');
+  if(b)b.addEventListener('click',function(){var o=n.classList.toggle('open');b.classList.toggle('open',o);b.setAttribute('aria-expanded',o);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  // jauges techniques
+  var bo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=e.target.querySelector('i');if(i)i.style.width=e.target.dataset.v+'%';bo.unobserve(e.target);}})},{threshold:.4});
+  document.querySelectorAll('.bar').forEach(function(el){bo.observe(el);});
+})();
+</script>
+</body>
+</html>
